@@ -34,9 +34,7 @@ const VideoPage = () => {
           {
             name: "Copy link",
             url:
-              window.location.protocol +
-              "//" +
-              window.location.host +
+              import.meta.env.VITE_BASE_URL +
               window.location.pathname +
               "?roomID=" +
               roomID,
